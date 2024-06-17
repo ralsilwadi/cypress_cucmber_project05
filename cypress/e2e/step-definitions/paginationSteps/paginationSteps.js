@@ -50,7 +50,7 @@ Then(/^the user should see "([^"]*)" City with the info below and an image$/, (c
     cy.wrap($el).should('contain.text', expectedDetails[index]);
   });
 
-  // paginationPage.getImage().should('be.visible');
+  paginationPage.getImage(city).should('be.visible');
 });
 
 

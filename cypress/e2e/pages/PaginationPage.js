@@ -31,6 +31,10 @@ class PaginationPage {
     return cy.get('.city_info, .country_info, .population_info')
   }
 
+  getImage(city) {
+    return cy.get(`img[alt="${city}"]`); 
+  }
+
   // Methods
 
   clickNextUntilDisabled(button) {
